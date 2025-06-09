@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
-import PdfReader from "./components/PdfReader";
 
 function App() {
   return (
@@ -14,7 +13,6 @@ function App() {
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/reglas" element={<PdfReader />} />
       </Routes>
     </BrowserRouter>
   );

@@ -9,6 +9,7 @@ import CounselSection from "../components/CounselSection";
 import ResetButton from "../components/ResetButton";
 import SaveLoadControls from "../components/SaveLoadControls";
 import Toast from "../components/Toast";
+import DownloadRulesButton from "../components/DownloadRulesButton";
 
 const defaultState = {
   monarchSupport: "",
@@ -90,6 +91,8 @@ export default function Home() {
           currentState={gameState}
           onLoad={(loadedState) => setGameState(loadedState)}
         />
+
+        <DownloadRulesButton />
 
         <Toast message="Partida auto-guardada" visible={toastVisible} />
       </div>
