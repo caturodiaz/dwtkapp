@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background-color: #fef6e4;
+  color: #333;
+}
+
+.container {
+  padding: 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Monarch Support */
+
+.section {
+  margin-bottom: 1.5rem;
+}
+
+.section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/* Unresolved Problems */
+
+.checkbox-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.checkbox-list li {
+  display: flex;
+  align-items: center;
+}
+
+/* Prestige Modifiers */
+
+
+/* Foreign Wars  */
+
+/* Reset Button */
+
+.reset-button {
+  background-color: #ef233c;
+  color: white;
+  padding: 0.75rem;
+  width: 100%;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.reset-button:hover {
+  background-color: #d90429;
+}
+
+/* Save Load Controls */
+
+.saved-list {
+  list-style: none;
+  padding: 0;
+}
+
+.saved-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 0;
+  gap: 0.5rem;
+}
+
+.saved-list button {
+  background-color: #3a86ff;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.saved-list button:nth-child(3) {
+  background-color: #ff006e;
+}
+
+/* Toast */
+
+.toast {
+  position: fixed;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #222;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  opacity: 0;
+  transition: all 0.5s ease;
+  z-index: 1000;
+}
+
+.toast.visible {
+  top: 20px;
+  opacity: 1;
+}
+
+
